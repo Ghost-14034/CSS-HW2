@@ -10,6 +10,12 @@ header {
 nav {
     background-color: darkgray;
     padding: 15px;
+    display:inline-block;
+    width:80%;
+}
+
+nav img{
+    width:10%;
 }
 
 footer {
@@ -23,10 +29,12 @@ main {
     font-size: 18px;
 }
 
-li {
-    display: inline-block;
-    width: 180px;
+/*
+li{
+    display:inline-block;
+    width:150px;
 }
+*/
 
 h1 {
     text-align: center;
@@ -36,4 +44,24 @@ h1 {
 
 p {
     line-height: 1.6;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:40% 40%;
+}
+
+.grid img{
+    width:100%;
+    display:grid;
+    grid-template-columns:40% 40%;
+    justify-content:space-around;
+    align-items:start;
+    row-gap:20px;
+}
+
+.flex{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
 }
